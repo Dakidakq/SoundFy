@@ -1,0 +1,632 @@
+@import url(./css-normalize-main/index.css);
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica", "Arial", "sans-serif";
+  src: url("/fonts/NHaasGroteskDSPro-25Th.woff2") format(".woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Neue Haas Grotesk Display Pro', Helvetica, Arial, sans-serif;
+}
+
+.cari {
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.main-header {
+  font-family: 'Inter';
+  width: 100%;
+  height: 110px;
+  background-color: rgb(0, 0, 0, .0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 4;
+}
+
+.button-header-div {
+  position: absolute;
+  margin-left: 90%;
+}
+
+.icon-main {
+  position: absolute;
+  margin-right: 55%;
+  margin-bottom: 9px;
+}
+
+.icon-main-img {
+  width: 190px;
+  height: 80px;
+}
+
+.button-header {
+  background-color: whitesmoke;
+  width: 100px;
+  height: 50px;
+  border-radius: 100px;
+  font-family: Inter;
+  border: none;
+  cursor: pointer;
+}
+
+.button-header:hover {
+  background-color: #DCDCDC;
+}
+
+.button-header:active {
+  transition: 0.3s;
+  background-color: #999999;
+}
+
+.main-header nav ul {
+  display: flex;
+  gap: 80px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: larger;
+}
+
+.point-0 {
+  border-bottom: 2px solid whitesmoke;
+  padding-bottom: 10px;
+}
+
+
+.point-1 {
+  padding-bottom: 10px;
+  background: linear-gradient(whitesmoke 0 0) var(--t, 0) 100% /var(--b, 0) 2px no-repeat;
+  transition: 0.5s;
+}
+
+.point-1:hover {
+  --b: 100%;
+  --t: 100%;
+}
+
+.point-2 {
+  padding-bottom: 10px;
+  background: linear-gradient(whitesmoke 0 0) var(--t, 0) 100% /var(--b, 0) 2px no-repeat;
+  transition: 0.5s;
+}
+
+.point-2:hover {
+  --b: 100%;
+  --t: 100%;
+}
+
+.point-3 {
+  padding-bottom: 10px;
+  background: linear-gradient(whitesmoke 0 0) var(--t, 0) 100% /var(--b, 0) 2px no-repeat;
+  transition: 0.5s;
+}
+
+.point-3:hover {
+  --b: 100%;
+  --t: 100%;
+}
+
+.point-4 {
+  padding-bottom: 10px;
+  background: linear-gradient(whitesmoke 0 0) var(--t, 0) 100% /var(--b, 0) 2px no-repeat;
+  transition: 0.5s;
+}
+
+.point-4:hover {
+  --b: 100%;
+  --t: 100%;
+}
+
+.volume-control {
+  margin-right: 15px;
+}
+
+.video-container {
+  background: linear-gradient(
+  360deg,
+  rgba(2, 9, 10, 1.00) 0%,
+  rgba(2, 9, 10, 0.975) 0.5%,
+  rgba(2, 9, 10, 0.95) 1%,
+  rgba(2, 9, 10, 0.925) 1.5%,
+  rgba(2, 9, 10, 0.90) 2%,
+  rgba(2, 9, 10, 0.875) 2.5%,
+  rgba(2, 9, 10, 0.85) 3%,
+  rgba(2, 9, 10, 0.825) 3.5%,
+  rgba(2, 9, 10, 0.80) 4%,
+  rgba(2, 9, 10, 0.775) 4.5%,
+  rgba(2, 9, 10, 0.75) 5%,
+  rgba(2, 9, 10, 0.725) 5.5%,
+  rgba(2, 9, 10, 0.70) 6%,
+  rgba(2, 9, 10, 0.675) 6.5%,
+  rgba(2, 9, 10, 0.65) 7%,
+  rgba(2, 9, 10, 0.625) 7.5%,
+  rgba(2, 9, 10, 0.60) 8%,
+  rgba(2, 9, 10, 0.575) 8.5%,
+  rgba(2, 9, 10, 0.55) 9%,
+  rgba(2, 9, 10, 0.525) 9.5%,
+  rgba(2, 9, 10, 0.50) 10%,
+  rgba(2, 9, 10, 0.475) 10.5%,
+  rgba(2, 9, 10, 0.45) 11%,
+  rgba(2, 9, 10, 0.425) 11.5%,
+  rgba(2, 9, 10, 0.40) 12%,
+  rgba(2, 9, 10, 0.375) 12.5%,
+  rgba(2, 9, 10, 0.35) 13%,
+  rgba(2, 9, 10, 0.325) 13.5%,
+  rgba(2, 9, 10, 0.30) 14%,
+  rgba(2, 9, 10, 0.275) 14.5%,
+  rgba(2, 9, 10, 0.25) 15%,
+  rgba(2, 9, 10, 0.225) 15.5%,
+  rgba(2, 9, 10, 0.20) 16%,
+  rgba(2, 9, 10, 0.175) 16.5%,
+  rgba(2, 9, 10, 0.15) 17%,
+  rgba(2, 9, 10, 0.125) 17.5%,
+  rgba(2, 9, 10, 0.10) 18%,
+  rgba(2, 9, 10, 0.075) 18.5%,
+  rgba(2, 9, 10, 0.05) 19%,
+  rgba(2, 9, 10, 0.025) 19.5%,
+  rgba(2, 9, 10, 0) 20%
+);
+}
+
+.fffd {
+  position: absolute;
+  right: 10%;
+  top: 35%;
+  color:whitesmoke;
+  font-size: 96px;
+  margin: 0;
+  padding: 0;
+}
+
+.first-bio {
+  font-size: 40px;
+  margin-left: 80px;
+}
+
+.GAhzjA {
+  font-family: Inter;
+  width: 120%;
+  height: 150%;
+  font-size: 30px;
+  font-style: normal;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245,245,245, .0);
+  color: whitesmoke;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.GAhzjA {
+  padding-bottom: 10px;
+  background: linear-gradient(whitesmoke 0 0) var(--t, 0) 100% /var(--b, 0) 2px no-repeat;
+  transition: 0.5s;
+}
+
+.GAhzjA:hover {
+  --b: 100%;
+  --t: 100%;
+}
+
+.aBfKpZ {
+  z-index: 3;
+  position: absolute;
+  margin-top: 0.8%;
+  margin-left: 40%;
+}
+
+.scroll-items {
+  font-size: 40px;
+  padding-left: 100px;
+}
+
+.scroll-items ol {
+  --height: 3rem;
+  height: var(--height);
+  overflow: hidden;
+}
+
+.scroll-items ol li{
+  animation: slide-up 15s infinite;
+  color: whitesmoke;
+}
+
+@keyframes slide-up {
+  0%, 10% {
+    transform: translateY(0%);
+  }
+  15%, 25% {
+    transform: translateY(-100%);
+  }
+  30%, 40% {
+    transform: translateY(-200%);
+  }
+}
+
+.body-section {
+  background-color: rgb(2, 9, 10);
+  position: relative;
+  width: 100%;
+  height: 4000px;
+}
+
+.body-items {
+  margin: auto;
+  padding: auto;
+  width: 90%;
+  max-width: 2500px;
+  height: 100%;
+}
+
+.body-section-one {
+  padding: 100px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: Inter;
+  color: whitesmoke;
+}
+
+.body-section-one h3 {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  color: gray;
+}
+
+.first-span:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  color: lightgreen;
+}
+
+.second-span:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  color: lightskyblue;
+}
+
+.tritium-span:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  color: lightseagreen;
+}
+
+.fourth-span:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  color: lightpink;
+}
+
+.body-section-two {
+  display: flex;
+  justify-content: end;
+  padding-top: 200px;
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.body-section-two-text {
+  font-size: 50px;
+  color: whitesmoke;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+
+.body-section-two-text h2 {
+  max-height: 90px;
+}
+
+.body-section-two-text h4 {
+  padding-top: 15px;
+  color: lightgray;
+}
+
+.body-section-two h6 {
+  color: gray;
+}
+
+.body-section-two-back {
+  background: transparent;
+  width: 1150px;
+  height: 700px;
+  border-radius: 15px;
+  /* box-shadow: 0px 2px rgb(0, 0, 0, .5); */
+}
+
+.body-section-tritium {
+  padding-top: 200px;
+  display: flex;
+  justify-content: start;
+}
+
+.second-video-div {
+  overflow: hidden;
+}
+
+.second-video {
+  border-radius: 15px;
+}
+
+.tritium-video-div {
+  overflow: hidden;
+}
+
+.tritium-video {
+  border-radius: 15px;
+}
+
+.body-section-tritium-text {
+  font-size: 50px;
+  color: whitesmoke;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+.body-section-tritium-text h4{
+  padding-left: 25px;
+  padding-top: 15px;
+  color: lightgray;
+}
+
+.body-section-tritium-back {
+  background: transparent;
+  width: 1150px;
+  height: 700px;
+  border-radius: 15px;
+  box-shadow: 0px;
+}
+
+.body-section-fourth {
+  position: relative;
+  padding-top: 255px;
+  display: flex;
+  gap: 30px;
+}
+
+.body-section-fourth-back-one {
+  background-color: rgb(3, 19, 20);
+  width: 1350px;
+  height: 700px;
+  border-radius: 15px;
+  box-shadow: 0px 2px rgb(0, 0, 0, .5);
+}
+
+.body-section-fourth-back-two {
+  background-color: rgb(3, 19, 20);
+  width: 1350px;
+  height: 700px;
+  border-radius: 15px;
+  box-shadow: 0px 2px rgb(0, 0, 0, .5);
+}
+
+.screen1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.screen2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.body-section-fourth-text {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 10;
+}
+
+.body-section-fourth-text h1 span {
+  color: whitesmoke;
+  font-size: 60px;
+}
+
+.body-section-fourth-text h1 span:hover {
+  transition: 0.5s;
+  color:  lightseagreen;
+  cursor: pointer;
+}
+
+.five-wish {
+  display: flex;
+  justify-content: center;
+  padding-top: 420px;
+}
+
+.add-to {
+  font-size: 46px;
+  font-family: Inter;
+}
+
+.add-to:hover {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+
+.footer {
+  background-color: rgb(2,9,10);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+  font-family: Inter;
+}
+
+.main-pages ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer nav ul li {
+  list-style: none;
+  color: rgb(115, 126, 140);
+}
+
+.footer-title-menu {
+  color: rgb(171, 178, 186);
+  padding-bottom: 8px;
+}
+
+.footer-title-help {
+  color: rgb(171, 178, 186);
+  padding-bottom: 8px;
+}
+
+.main-footer-pages-div nav ul li a {
+  text-decoration: none;
+  color: rgb(115, 126, 140);
+}
+
+.help-pages nav ul li a {
+  text-decoration: none;
+  color: rgb(115, 126, 140);
+}
+
+.main-footer-text-1 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+
+.main-footer-text-2 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+
+.main-footer-text-3 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+
+.main-footer-text-4 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+
+.main-footer-text-5 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+
+.help-footer-text-1 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+
+.help-footer-text-2 {
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+
+.main-footer-text-1:hover {
+  text-decoration: underline;
+}
+
+.main-footer-text-2:hover {
+  text-decoration: underline;
+}
+
+.main-footer-text-3:hover {
+  text-decoration: underline;
+}
+
+.main-footer-text-4:hover {
+  text-decoration: underline;
+}
+
+.main-footer-text-5:hover {
+  text-decoration: underline;
+}
+
+.help-footer-text-1:hover {
+  text-decoration: underline;
+}
+
+.help-footer-text-2:hover {
+  text-decoration: underline;
+}
+
+.crypto-donate:hover {
+  text-decoration: underline;
+}
+
+.one-time-donate:hover {
+  text-decoration: underline;
+}
+
+.donate-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  border-left: 2px solid whitesmoke;
+}
+
+.donate-section nav {
+  padding-left: 30px;
+} 
+
+.donate-section nav ul li a {
+  text-decoration: none;
+} 
+
+.donate-us-btn {
+  width: 210px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.footer-donate-btn {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.one-time-donate {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.one-time-donate a{
+  color: rgb(115, 126, 140);
+}
+
+.crypto-donate {
+  color: rgb(171, 178, 186) !important;
+  padding-bottom: 2px;
+}
+
+.crypto-donate a {
+  color: rgb(171, 178, 186);
+}

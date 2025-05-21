@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundFy</title>
+  <link rel="stylesheet" href="./cssfile/download.css">
+  <link rel="stylesheet" href="/cssfile/volume.css">
+  <link rel="icon" href="./images/cloud-icon-removebg-preview_1_optimized.png">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="icon-main">
+      <a href="./index.html">
+        <img class="icon-main-img" src="./images/soundfy whitesmoke.svg" alt="icon">
+      </a>
+    </div>
+
+    <div>
+      <nav>
+        <ul>
+          <li><a class="point-0" href="./index.html">Home</a></li>
+          <li><a class="point-1" href="./download.html">Wishlist</a></li>
+          <li><a class="point-2" href="./aboutus.html">About us</a></li>
+          <li><a class="point-3" href="./contactus.html">Contact us</a></li>
+          <li><a class="point-4" href="./updates.html">Updates</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+  <div class="travis-scat-div">
+    <video id="myVideo" autoplay muted loop class="travis-scat-vid">
+      <source src="/your video optional 2560x1440" type="video/mp4">
+    </video>
+    <div class="volume-control">
+      <div class="volume-wrapper">
+        <div class="wrapper">
+          <img src="/images/mute.svg" alt="">
+          <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0">
+          </div>
+        <button id="volume-btn"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-download-body">
+    <h1 class="main-title-download-body">One app - All music</h1>
+    <div class="scroll-items">
+      <ol>
+        <li><span>All songs</span></li>
+        <li><span>All albums</span></li>
+        <li><span>All remixes</span></li>
+        <li><span>Full free access</span></li>
+      </ol>
+    </div>
+      <div class="request-access-text-div">
+        <p class="request-access-text">Request Access</p>
+      </div>
+    <div class="request-access-body">
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <input type="hidden" name="access_key" value="cb75ccae-96d6-4549-bb58-10cc63da1578">
+          <input type="hidden" name="Request Access">
+          <input type="email" name="email" class="user-email-input" placeholder="Your e-mail" autocomplete="off" required>
+          <button class="submit">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+</button>
+        </form>
+    </div>
+  </div>
+
+</section>
+  <div class="footer">
+    <div class="main-footer-pages-div">
+      <nav>
+        <ul class="main-pages">
+          <li>
+            <h1 class="footer-title-menu">Menu</h1>
+          </li>
+          <li><a href="./index.html">
+              <h4 class="main-footer-text-1">Home
+            </a></h4>
+          </li>
+          <li><a href="./aboutus.html">
+              <h4 class="main-footer-text-2">About
+            </a></h4>
+          </li>
+          <li><a href="./download.html">
+              <h4 class="main-footer-text-4">Wishlist
+            </a></h4>
+          </li>
+          <li><a href="./updates.html">
+              <h4 class="main-footer-text-5">Updates
+            </a></h4>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="help-pages">
+      <nav>
+        <ul class="help-pages">
+          <li>
+            <h1 class="footer-title-help">Help</h1>
+          </li>
+          <li><a href="./contactus.html">
+              <h4 class="help-footer-text-1">Contact us
+            </a></h4>
+          </li>
+          <li><a href="./bugreport.html">
+              <h4 class="help-footer-text-2">Bug report
+            </a></h4>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="donate-section">
+      <nav>
+        <ul>
+          <li class="crypto-donate"><a href="./pageinprogress.html">Crypto Donation</a></li>
+          <li class="footer-donate-btn"><a href="./pageinprogress.html"><button class="donate-us-btn">Donate</button></a></li>
+          <li class="one-time-donate"><a href="./pageinprogress.html">One-time Donation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+  
+</body>
+  <script src="/js/volume.js"></script>
+</html>

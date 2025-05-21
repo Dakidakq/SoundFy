@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./cssfile/contactus.css">
+  <link rel="stylesheet" href="/cssfile/volume.css">
+</head>
+<body>
+<header class="main-header">
+
+<div class="icon-main">
+  <a href="./index.html">
+    <img class="icon-main-img" src="./images/soundfy whitesmoke.svg" alt="icon">
+  </a>
+</div>
+  <div>
+    <nav>
+      <ul>
+          <li><a class="point-0" href="./index.html">Home</a></li>
+          <li><a class="point-1" href="./download.html">Wishlist</a></li>
+          <li><a class="point-2" href="./aboutus.html">About us</a></li>
+          <li><a class="point-3" href="./contactus.html">Contact us</a></li>
+          <li><a class="point-4" href="./updates.html">Updates</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="button-header-div">
+      <a href="/download.html">
+      <button class="button-header">Wishlist</button>
+      </a>
+  </div>
+</header>
+
+<div class="body-section">
+  <div class="video-container">
+    <video id="myVideo" autoplay muted loop class="platina-vid">
+      <source src="/your video optional 2560x1440" type="video/mp4">
+    </video>
+    <div class="volume-control">
+      <div class="volume-wrapper">
+        <div class="wrapper">
+          <img src="/images/mute.svg" alt="">
+          <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0">
+        </div>
+        <button id="volume-btn"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-text">
+    <h1 class="">If you have any questions or would like to contact us</h1>
+    <a href="mailto:soundfysupp@gmail.com"><h1 class="email-contact">soundfysupp@gmail.com</h1></a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="main-footer-pages-div">
+    <nav>
+      <ul class="main-pages">
+        <li>
+          <h1 class="footer-title-menu">Menu</h1>
+        </li>
+        <li><a href="./index.html">
+            <h4 class="main-footer-text-1">Home
+          </a></h4>
+        </li>
+        <li><a href="./aboutus.html">
+            <h4 class="main-footer-text-2">About
+          </a></h4>
+        </li>
+        <li><a href="./download.html">
+            <h4 class="main-footer-text-4">Download
+          </a></h4>
+        </li>
+        <li><a href="./updates.html">
+            <h4 class="main-footer-text-5">Updates
+          </a></h4>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="help-pages">
+    <nav>
+      <ul class="help-pages">
+        <li>
+          <h1 class="footer-title-help">Help</h1>
+        </li>
+        <li><a href="./contactus.html">
+            <h4 class="help-footer-text-1">Contact us
+          </a></h4>
+        </li>
+        <li><a href="./bugreport.html">
+            <h4 class="help-footer-text-2">Bug report
+          </a></h4>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="donate-section">
+    <nav>
+      <ul>
+        <li class="crypto-donate"><a href="./pageinprogress.html">Crypto Donation</a></li>
+        <li class="footer-donate-btn"><a href="./pageinprogress.html"><button class="donate-us-btn">Donate</button></a></li>
+        <li class="one-time-donate"><a href="./pageinprogress.html">One-time Donation</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</body>
+  <script src="./js/volume.js"></script>
+</html>
